@@ -1,0 +1,10 @@
+import fnmatch
+import os
+
+os.chdir("D:\\Test_Firefox\\86.0b8\\firefox")
+with open("BITS_testing.txt") as bits:
+    if "Starti4ng BITS download with url" in bits.read():
+        print("BITS WAS USED")
+    else:
+        print("Error/BITS NOT USED")
+
